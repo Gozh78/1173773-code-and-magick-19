@@ -114,6 +114,7 @@
     window.backend.save(new FormData(form), function () {
       setup.classList.add('hidden');
     }, onLoadError);
+    // form.querySelector('.setup-submit').textContent = 'Идёт сохранение...'; надо будет обнулить
     evt.preventDefault();
   });
 })();
